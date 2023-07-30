@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-class AlbumsController < ApplicationController
+class ContentController < ApplicationController
   def index; end
 end
