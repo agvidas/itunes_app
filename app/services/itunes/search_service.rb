@@ -14,6 +14,7 @@ module Itunes
 
     def call
       JSON.parse(self.class.get('/search', options))
+      # Handle errors
     end
 
     private
