@@ -13,7 +13,7 @@ module Itunes
     end
 
     def call
-      JSON.parse(self.class.get('/search', options))
+      JSON.parse(self.class.get('/search', options))['results']
       # Handle errors
     end
 

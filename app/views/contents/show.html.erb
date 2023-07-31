@@ -1,0 +1,7 @@
+<% @contents.each do |content| %>
+  <tr>
+    <td><%= image_tag(content.thumbnail)%><td>
+    <td><%= content.title %></td>
+    <td><%= content.subtitle %></td>
+  </tr>
+<% end %>
