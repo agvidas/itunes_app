@@ -4,10 +4,6 @@
 
 This is a demo of a simple Rails app that searches iTunes albums by artist name and save favorite albums to a database.
 
-### Example
-![homepage](./app/assets/images/show-action.png)
-![homepage](./app/assets/images/favourite.png)
-
 ### Installation
 
 - Install dependencies: `bundle install`
@@ -25,3 +21,14 @@ This is a demo of a simple Rails app that searches iTunes albums by artist name 
 ### To run quality control tools
 
 - In project dir: `rubocop` and `reek`
+
+### Using docker-compose
+
+1. In project dir: `docker-compose up --build`
+2. Create DB `docker-compose exec app  rails db:setup`
+3. Visit `http://localhost:3000/`
+
+### Examples
+![homepage](./app/assets/images/show-action.png)
+---
+![homepage](./app/assets/images/favourite.png)
