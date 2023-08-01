@@ -3,3 +3,9 @@
 detectors:
   IrresponsibleModule:
     enabled: false
+
+# Directories and files below will not be scanned at all
+exclude_paths:
+  - db/
+  - app/mailers/
+  - app/jobs/

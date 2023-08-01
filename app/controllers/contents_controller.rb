@@ -9,9 +9,7 @@ class ContentsController < ApplicationController
 
   def contents = itunes_results.map(&ContentPresenter)
 
-  def itunes_results
-    Itunes::SearchService.new(term).call
-  end
+  def itunes_results = Itunes::SearchService.new(term).call
 
   def term = params[:term]
 end
